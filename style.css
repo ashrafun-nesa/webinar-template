@@ -326,9 +326,8 @@ figcaption.time-limit {
   font-weight: 700;
   font-size: 80px;
   line-height: 1.025;
-  /* or 102% */
-
   color: #ffffff;
+  margin: 111px 0px 38px;
 }
 .left-wrapper-text {
   font-family: "Manrope";
@@ -338,9 +337,10 @@ figcaption.time-limit {
   line-height: 1.41;
   color: #4a4a4a;
 }
-.footer-wrapper{
-    display: flex;
+.footer-wrapper {
+  display: flex;
 }
-.left-wrapper, .right-wrapper{
-    width: 50%;
+.left-wrapper,
+.right-wrapper {
+  width: 50%;
 }
