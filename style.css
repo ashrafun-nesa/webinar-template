@@ -1,13 +1,270 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Jura', sans-serif;
-    font-style: normal;
+body {
+  font-family: "Jura", sans-serif;
+  font-style: normal;
+  height: 100%;
 }
-.webinar-container{
-    width: 100%;
-    max-width: 1296px;
+h2 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.02;
+}
+h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+h4 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.47;
+}
+h5 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.27;
+}
+span,
+p {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+}
+input[type="text"],
+input[type="email"] {
+  text-decoration: none;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 18px 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.webinar-container {
+  width: 100%;
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  object-fit: cover;
+  background: url(images/hero-background.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 224px;
+}
+.hero-section .hero-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.hero-container .left-section,
+.hero-container .right-section {
+  width: 50%;
+}
+.left-section .hero-heading {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 37px;
+  margin-top: 121px;
+}
+.left-section .counter-section {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  margin-bottom: 33px;
+}
+.counter {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  gap: 5px;
+}
+.counter h4 {
+  background: #9a6593;
+  box-shadow: 0px 2px 3px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+  padding: 6px 12px;
+}
+.hero-text {
+  font-family: "Manrope", sans-serif;
+  color: #ffffff;
+}
+.hero-container .right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.learn-our-webinar {
+  background: #f2f2f2;
+  padding-top: 271px;
+  position: relative;
+  padding-bottom: 127px;
+}
+.learn-our-webinar h2 {
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #8b3a80;
+  margin-bottom: 86px;
+}
+.email-register-section {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(images/Mask.png);
+  width: 100%;
+  max-width: 1170px;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 30px rgba(183, 183, 183, 0.1);
+  border-radius: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 46px;
+}
+.email-register-section h3 {
+  color: #8b3a80;
+  margin-bottom: 45px;
+}
+
+.register-button {
+  background: #eca61f;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 15px 41px;
+  border: none;
+}
+.register-form {
+  font-family: "Manrope";
+}
+.register-form input {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.register-form p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+  color: rgba(0, 0, 0, 0.7);
+}
+.register-form .privacy-policy {
+  text-decoration-line: underline;
+  color: rgba(5, 147, 252, 0.7);
+}
+.webinar-image-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.web-development,
+.web-design,
+.research-branding {
+  width: calc(100% / 3 - 50px);
+  margin-right: 50px;
+}
+.research-branding {
+  margin-right: 0;
+}
+.webinar-image-section img {
+  margin-bottom: 32px;
+}
+.image-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #8b3a80;
+  margin-bottom: 15px;
+}
+.webinar-image-section figcaption {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.our-awesome-speakers {
+  padding: 99px 0 86px;
+}
+.our-awesome-speakers h2 {
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #8b3a80;
+  margin-bottom: 71px;
+}
+
+.speaker-details {
+  display: flex;
+  justify-content: space-between;
+}
+.speaker-details .speaker {
+  text-align: center;
+}
+.speaker .speaker-name {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 2.06;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #8b3a80;
+}
+.speaker figcaption {
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 3.44;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.5);
+}
+.our-schedule {
+  background: #f2f2f2;
+}
+.our-schedule h2 {
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #8b3a80;
+}
+.schedule-tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.our-schedule .day-button {
+  background: #ffffff;
+  box-shadow: 0px 25px 30px rgba(183, 183, 183, 0.08);
+  border-radius: 10px;
+  padding: 16px 28px;
+  border: none;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #4a4a4a;
+}
+.day-button.active {
+  background: #eca61f;
+}
+.our-schedule .day-button:hover {
+  background: #eca61f;
 }
