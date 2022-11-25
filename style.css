@@ -48,7 +48,7 @@ input[type="email"] {
 }
 input[type="text"]:focus,
 input[type="email"]:focus {
-  border-color: transparent;
+    border-color: transparent;
 }
 .webinar-container {
     width: 100%;
@@ -221,12 +221,15 @@ form .privacy-policy {
 
 .speaker-details {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .speaker-details .speaker {
     text-align: center;
     width: calc(100% / 3 - 20px);
     margin-right: 20px;
+}
+.speaker-details .speaker:last-child {
+    margin-right: 0;
 }
 .speaker .image {
     position: relative;
@@ -407,7 +410,7 @@ figcaption.time-limit {
     font-size: 80px;
     line-height: 1.025;
     color: #ffffff;
-    margin: 111px 0px 38px;
+    margin-bottom: 38px;
 }
 .left-wrapper-text {
     font-family: "Manrope";
@@ -419,6 +422,7 @@ figcaption.time-limit {
 }
 .footer-wrapper {
     display: flex;
+    align-items: center;
 }
 .left-wrapper,
 .right-wrapper {
@@ -487,4 +491,17 @@ figcaption.time-limit {
     border-radius: 10px;
     border: none;
     padding: 16px 0;
+}
+@media only screen and (max-width: 1299px) {
+    .left-section .hero-heading {
+        font-size: 80px;
+        line-height: 1.1;
+        margin-top: 30px;
+    }
+    .email-register-section {
+        max-width: 1100px;
+    }
+    .footer-section h2 {
+        font-size: 70px;
+    }
 }
